@@ -446,13 +446,6 @@ module.exports = {
         } else {
             payload = req.query;
         }
-        
-        if (typeof payload == "object") {
-            for (const key in payload) {
-                if (typeof payload[key] == "string" && !isNaN(payload[key])) payload[key] = +payload[key];
-            }
-        }
-        
         if (req.method === "POST" && typeof req.body !== "undefined") {
             if (typeof payload === "object") {
                 payload = Object.assign({}, payload, req.body);

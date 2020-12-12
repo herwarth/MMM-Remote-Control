@@ -13,7 +13,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 - "TV is off" now detected (#234)
 - Toggle and Status Monitor working as expected (#234)
-- Sending payload numbers now counts as integer (#155)
 
 ### Changed
 - Now the system used for turn on and off the screen will be `vcgencmd` (#227 and more)
